@@ -1,10 +1,6 @@
 {
-    "id":"int", 
-    "name":"string",
-    "age":"int", 
-    "gender":{
-        "object":"enum",
-        "type": "string",
-        "values": ["Male","Female"]
-    }
+    "id": "int",
+    "name": "string",
+    "age": "int",
+    "gender": "string"
 }

@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/gmahota/CodeGenerator/issues"
   },
-  "homepage": "https://github.com/gmahota/CodeGenerator#readme"
+  "homepage": "https://github.com/gmahota/CodeGenerator#readme",
+  "dependencies": {
+    "quicktype-core": "^6.0.69"
+  }
 }

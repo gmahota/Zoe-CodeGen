@@ -1,5 +1,7 @@
 const robots = {
-    classeLibary: require('./CSharp/classeLibray.js')
+    csharp:{
+        classLibary: require('./csharp/classLibray.js')
+    }    
 }
 
 module.exports = robots
