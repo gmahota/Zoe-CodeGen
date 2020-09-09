@@ -1,0 +1,23 @@
+{
+  "name": "codegenerator",
+  "version": "1.0.0",
+  "description": "CodeGenerator to help build flex sistems",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "nodemon .",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gmahota/CodeGenerator.git"
+  },
+  "author": "Guimarães Mahota",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gmahota/CodeGenerator/issues"
+  },
+  "homepage": "https://github.com/gmahota/CodeGenerator#readme"
+}
