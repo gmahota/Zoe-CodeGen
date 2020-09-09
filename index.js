@@ -1,3 +1,11 @@
-const testRead = require('./robots/CSharp/fileread.js');
+const testRead = require('./robots/csharp/fileread.js');
 
-console.log(testRead('example/c#','person.template.json'));
+const content = {}
+
+content.path = "./content/sampleperson"
+content.project="SamplePerson"
+content.json = testRead('example/c#','person.template.json');
+
+console.log(content);
+
+const aaa = require('./services/codegen.js');

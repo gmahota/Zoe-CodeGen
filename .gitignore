@@ -87,6 +87,7 @@ content/*.png
 content/*.jpg
 content/*.js
 content/*.mov
+content/*.cache
 
 #Adobe After Effects Auto-Save
 after-effects-script.js
