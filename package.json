@@ -1,7 +1,7 @@
 {
-  "name": "codegenerator",
+  "name": "zoe-codegen",
   "version": "1.0.0",
-  "description": "CodeGenerator to help build flex sistems",
+  "description": "Zoe Code Generator to help build flex sistems",
   "main": "index.js",
   "directories": {
     "doc": "docs"
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gmahota/CodeGenerator.git"
+    "url": "git+https://github.com/gmahota/Zoe-CodeGen.git"
   },
   "author": "Guimarães Mahota",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gmahota/CodeGenerator/issues"
+    "url": "https://github.com/gmahota/Zoe-CodeGen/issues"
   },
-  "homepage": "https://github.com/gmahota/CodeGenerator#readme",
+  "homepage": "https://github.com/gmahota/Zoe-CodeGen#readme",
   "dependencies": {
     "quicktype-core": "^6.0.69"
   }
