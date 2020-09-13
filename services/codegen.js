@@ -6,7 +6,24 @@ const {
   JSONSchemaStore,
 } = require("quicktype-core");
 
-async function quicktypeJSON(targetLanguage, typeName, jsonString) {
+const state  = require('./../robots/csharp/fileread.js');
+
+async function codegen(content) {
+
+  const { lines: converted } = await quicktypeJSON(
+    content.language,
+    content.typeName,
+    content.jsonString,
+    content.outputFilename 
+  );
+
+  content.codegen = converted.join("\n");
+
+  state.save(content);
+
+}
+
+async function quicktypeJSON(targetLanguage, typeName, jsonString,outputFilename) {
   const jsonInput = jsonInputForTargetLanguage(targetLanguage);
 
   // We could add multiple samples for the same desired
@@ -23,6 +40,7 @@ async function quicktypeJSON(targetLanguage, typeName, jsonString) {
   return await quicktype({
     inputData,
     lang: targetLanguage,
+    outputFilename:outputFilename
   });
 }
 
@@ -61,4 +79,4 @@ async function test() {
   console.log(swiftPerson.join("\n"));
 }
 
-modules.exports = [test, quicktypeJSONSchema, quicktypeJSON];
+module.exports = codegen;

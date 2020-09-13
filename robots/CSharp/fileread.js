@@ -12,4 +12,15 @@ function readJsonTemplate(folder,file){
     return contentJson;
 }
 
-module.exports = readJsonTemplate;
+function readJsonFile(folder,file){
+    const templateFilePath = fromRoot(`./${folder}/${file}`);
+    const fileBuffer = fs.readFileSync(templateFilePath, 'utf-8');
+    return fileBuffer;
+}
+
+function save(content) {
+    const filePath = content.outputFilename
+    const scriptString = content.codegen
+    return fs.writeFileSync(filePath, scriptString)
+}
+module.exports = {readJsonTemplate, readJsonFile,save};
