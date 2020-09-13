@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/gmahota/Zoe-CodeGen#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "quicktype-core": "^6.0.69"
   }
 }
